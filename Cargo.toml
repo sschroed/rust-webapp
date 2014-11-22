@@ -2,4 +2,8 @@
 
 name = "rust-webapp"
 version = "0.0.1"
-authors = ["Sam Schroeder <sam@code42.com>"]
+authors = ["Sam Schroeder <samuelschroeder@gmail.com>"]
+
+[dependencies.iron]
+
+git = "https://github.com/iron/iron.git"
