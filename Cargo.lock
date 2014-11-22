@@ -3,6 +3,7 @@ name = "rust-webapp"
 version = "0.0.1"
 dependencies = [
  "iron 0.0.1 (git+https://github.com/iron/iron.git)",
+ "router 0.1.0 (git+https://github.com/iron/router.git)",
 ]
 
 [[package]]
@@ -132,6 +133,22 @@ dependencies = [
 name = "pnacl-build-helper"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "route-recognizer"
+version = "0.1.0"
+source = "git+https://github.com/conduit-rust/route-recognizer.rs.git#fd07a7fb3d257c4114321fb25948264223c61a1b"
+
+[[package]]
+name = "router"
+version = "0.1.0"
+source = "git+https://github.com/iron/router.git#fac586df9f8841f6d180291f55a1f607f8444666"
+dependencies = [
+ "http 0.1.0-pre (git+https://github.com/chris-morgan/rust-http.git)",
+ "iron 0.0.1 (git+https://github.com/iron/iron.git)",
+ "route-recognizer 0.1.0 (git+https://github.com/conduit-rust/route-recognizer.rs.git)",
+ "typemap 0.0.0 (git+https://github.com/reem/rust-typemap.git)",
+]
 
 [[package]]
 name = "time"
