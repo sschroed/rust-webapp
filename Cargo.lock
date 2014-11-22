@@ -1,0 +1,172 @@
+[root]
+name = "rust-webapp"
+version = "0.0.1"
+dependencies = [
+ "iron 0.0.1 (git+https://github.com/iron/iron.git)",
+]
+
+[[package]]
+name = "content_type"
+version = "0.1.0"
+source = "git+https://github.com/reem/rust-http-content-type.git#3b315e33515a008fb02be634703ab150a8719826"
+dependencies = [
+ "generator 0.1.0 (git+https://github.com/reem/rust-http-content-type.git)",
+ "http 0.1.0-pre (git+https://github.com/chris-morgan/rust-http.git)",
+ "phf 0.0.0 (git+https://github.com/sfackler/rust-phf.git)",
+]
+
+[[package]]
+name = "error"
+version = "0.0.0"
+source = "git+https://github.com/reem/rust-error.git#2b0402c716bb004094415495471d7ae31308fdbf"
+dependencies = [
+ "typeable 0.0.2 (git+https://github.com/reem/rust-typeable.git)",
+]
+
+[[package]]
+name = "gcc"
+version = "0.0.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "generator"
+version = "0.1.0"
+source = "git+https://github.com/reem/rust-http-content-type.git#3b315e33515a008fb02be634703ab150a8719826"
+dependencies = [
+ "http 0.1.0-pre (git+https://github.com/chris-morgan/rust-http.git)",
+ "phf_mac 0.0.0 (git+https://github.com/sfackler/rust-phf.git)",
+ "url 0.1.0 (git+https://github.com/servo/rust-url.git)",
+]
+
+[[package]]
+name = "http"
+version = "0.1.0-pre"
+source = "git+https://github.com/chris-morgan/rust-http.git#57d2b9ad5afa2939f8c69dddfd9bf03461f25b90"
+dependencies = [
+ "openssl 0.0.1 (git+https://github.com/sfackler/rust-openssl.git)",
+ "time 0.0.3 (git+https://github.com/rust-lang/time)",
+ "url 0.1.0 (git+https://github.com/servo/rust-url.git)",
+]
+
+[[package]]
+name = "iron"
+version = "0.0.1"
+source = "git+https://github.com/iron/iron.git#db9c7014e5a6ff57f34394b271c89a3fc9bd4c14"
+dependencies = [
+ "content_type 0.1.0 (git+https://github.com/reem/rust-http-content-type.git)",
+ "error 0.0.0 (git+https://github.com/reem/rust-error.git)",
+ "http 0.1.0-pre (git+https://github.com/chris-morgan/rust-http.git)",
+ "modifier 0.0.1 (git+https://github.com/reem/rust-modifier.git)",
+ "plugin 0.0.0 (git+https://github.com/reem/rust-plugin.git)",
+ "typemap 0.0.0 (git+https://github.com/reem/rust-typemap.git)",
+ "url 0.1.0 (git+https://github.com/servo/rust-url.git)",
+]
+
+[[package]]
+name = "libressl-pnacl-sys"
+version = "2.0.1"
+source = "git+https://github.com/DiamondLovesYou/libressl-pnacl-sys.git#9a42eeb52070ae0aa4f666d36198899e1e54cda5"
+dependencies = [
+ "pnacl-build-helper 1.0.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "modifier"
+version = "0.0.1"
+source = "git+https://github.com/reem/rust-modifier.git#a538909229291164467583221d4e6e39fd5043b6"
+
+[[package]]
+name = "openssl"
+version = "0.0.1"
+source = "git+https://github.com/sfackler/rust-openssl.git#efa71212432a9003d35fdae0e422716e6592b9ae"
+dependencies = [
+ "libressl-pnacl-sys 2.0.1 (git+https://github.com/DiamondLovesYou/libressl-pnacl-sys.git)",
+ "openssl-sys 0.0.1 (git+https://github.com/sfackler/rust-openssl.git)",
+]
+
+[[package]]
+name = "openssl-sys"
+version = "0.0.1"
+source = "git+https://github.com/sfackler/rust-openssl.git#efa71212432a9003d35fdae0e422716e6592b9ae"
+dependencies = [
+ "pkg-config 0.0.1 (git+https://github.com/alexcrichton/pkg-config-rs)",
+]
+
+[[package]]
+name = "phantom"
+version = "0.0.1"
+source = "git+https://github.com/reem/rust-phantom.git#004ee861f7838f1a75db32f374daa862200205e5"
+
+[[package]]
+name = "phf"
+version = "0.0.0"
+source = "git+https://github.com/sfackler/rust-phf.git#2f3c6053c2d754974a94aa45a49b8cce10ae88ba"
+dependencies = [
+ "xxhash 0.0.1 (git+https://github.com/Jurily/rust-xxhash)",
+]
+
+[[package]]
+name = "phf_mac"
+version = "0.0.0"
+source = "git+https://github.com/sfackler/rust-phf.git#2f3c6053c2d754974a94aa45a49b8cce10ae88ba"
+dependencies = [
+ "time 0.0.3 (git+https://github.com/rust-lang/time)",
+ "xxhash 0.0.1 (git+https://github.com/Jurily/rust-xxhash)",
+]
+
+[[package]]
+name = "pkg-config"
+version = "0.0.1"
+source = "git+https://github.com/alexcrichton/pkg-config-rs#d24a08d87d63df8dc9526c503944415b86719220"
+
+[[package]]
+name = "plugin"
+version = "0.0.0"
+source = "git+https://github.com/reem/rust-plugin.git#38c93a9b8dd3e704741d8986d4555b46040af43d"
+dependencies = [
+ "phantom 0.0.1 (git+https://github.com/reem/rust-phantom.git)",
+ "typemap 0.0.0 (git+https://github.com/reem/rust-typemap.git)",
+]
+
+[[package]]
+name = "pnacl-build-helper"
+version = "1.0.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "time"
+version = "0.0.3"
+source = "git+https://github.com/rust-lang/time#44aec0e7996fc0f2e76eeb2215f8fd78e1965e46"
+dependencies = [
+ "gcc 0.0.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "typeable"
+version = "0.0.2"
+source = "git+https://github.com/reem/rust-typeable.git#2f240fb44ce2fcdbb2b890623bfb2afe18a67c05"
+
+[[package]]
+name = "typemap"
+version = "0.0.0"
+source = "git+https://github.com/reem/rust-typemap.git#4736681d928cf7daa41f1799ef9c25a81811f74b"
+dependencies = [
+ "phantom 0.0.1 (git+https://github.com/reem/rust-phantom.git)",
+ "unsafe-any 0.1.0 (git+https://github.com/reem/rust-unsafe-any.git)",
+]
+
+[[package]]
+name = "unsafe-any"
+version = "0.1.0"
+source = "git+https://github.com/reem/rust-unsafe-any.git#2863af363bbd83079b6773920bba5b736408db33"
+
+[[package]]
+name = "url"
+version = "0.1.0"
+source = "git+https://github.com/servo/rust-url.git#a838a41263472de966f7ec8db758caa9cc4699a4"
+
+[[package]]
+name = "xxhash"
+version = "0.0.1"
+source = "git+https://github.com/Jurily/rust-xxhash#6027ce91f9164f2f936149547f789103b1b671e6"
+
