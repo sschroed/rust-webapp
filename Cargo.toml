@@ -1,0 +1,5 @@
+[package]
+
+name = "rust-webapp"
+version = "0.0.1"
+authors = ["Sam Schroeder <sam@code42.com>"]
